@@ -85,5 +85,13 @@
             <Insets left="209.0" />
          </GridPane.margin>
       </ChoiceBox>
+      <Label text="Elija el día" GridPane.rowIndex="4">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </Label>
    </children>
 </GridPane>

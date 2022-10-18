@@ -17,25 +17,25 @@
           <Menu mnemonicParsing="false" text="Autobus">
             <items>
                   <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Viaje simple" />
-              <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Viaje ida y vuelta" />
+              <MenuItem mnemonicParsing="false" onAction="#abrirFormulario2" text="Viaje ida y vuelta" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Avión">
             <items>
-              <MenuItem mnemonicParsing="false" text="Viaje simple" />
-                  <MenuItem mnemonicParsing="false" text="Viaje ida y vuelta" />
+              <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Viaje simple" />
+                  <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Viaje ida y vuelta" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Coche">
             <items>
-              <MenuItem mnemonicParsing="false" text="Viaje simple" />
-                  <MenuItem mnemonicParsing="false" text="Viaje ida y vuelta" />
+              <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Viaje simple" />
+                  <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Viaje ida y vuelta" />
             </items>
           </Menu>
             <Menu mnemonicParsing="false" text="Tren">
               <items>
-                <MenuItem mnemonicParsing="false" text="Viaje simple" />
-                  <MenuItem mnemonicParsing="false" text="Viaje ida y vuelta" />
+                <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Viaje simple" />
+                  <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Viaje ida y vuelta" />
               </items>
             </Menu>
         </menus>

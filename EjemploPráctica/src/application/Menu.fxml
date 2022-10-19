@@ -14,28 +14,29 @@
    <top>
       <MenuBar style="-fx-background-color: #F0F8FF;" BorderPane.alignment="CENTER">
         <menus>
+        	<Menu mnemonicParsing="false" text="Precios">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#abrirFormulario5" text="Lista de precios" />
+              </items>
+            </Menu>
           <Menu mnemonicParsing="false" text="Autobus">
             <items>
-                  <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Viaje simple" />
-              <MenuItem mnemonicParsing="false" onAction="#abrirFormulario2" text="Viaje ida y vuelta" />
+                  <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Viaja en autobús" />                
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Avión">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Viaje simple" />
-                  <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Viaje ida y vuelta" />
+                        <MenuItem mnemonicParsing="false" onAction="#abrirFormulario2" text="Viaja en avión" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Coche">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Viaje simple" />
-                  <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Viaje ida y vuelta" />
+              <MenuItem mnemonicParsing="false" onAction="#abrirFormulario3" text="Viaja en coche " />
             </items>
           </Menu>
             <Menu mnemonicParsing="false" text="Tren">
               <items>
-                <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Viaje simple" />
-                  <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Viaje ida y vuelta" />
+                <MenuItem mnemonicParsing="false" onAction="#abrirFormulario4" text="Viaja en tren" />
               </items>
             </Menu>
         </menus>

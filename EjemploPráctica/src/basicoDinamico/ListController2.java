@@ -15,7 +15,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldListCell;
 import javafx.scene.control.cell.TextFieldTreeCell;
 
-public class ListController {
+public class ListController2 {
 
     @FXML
     private ChoiceBox<String> choice1;
@@ -27,7 +27,7 @@ public class ListController {
     private ChoiceBox<String> destinoVuelta1;
     
     
-  
+    
 
     @FXML
     private void initialize() {   
@@ -37,13 +37,12 @@ public class ListController {
         		"6 Personas");      
         
      // Ítems del ChoiceBox
-        destinoVuelta1.getItems().addAll("Madrid", "Barcelona", "Islas Canarias", "Islas Baleares", "Sevilla");    
+        destinoVuelta1.getItems().addAll("Madrid", "Toledo", "Ciudad Real", "Ávila", "Burgos" );   
         
      // Ítems del ChoiceBox
-        destinoIda1.getItems().addAll("Madrid", "Barcelona", "Islas Canarias", "Islas Baleares", "Sevilla" );    
+        destinoIda1.getItems().addAll("Madrid", "Toledo", "Ciudad Real", "Ávila", "Burgos" );    
         
-       
-                
+                                
           
     }
     

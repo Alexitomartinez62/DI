@@ -5,14 +5,15 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="650.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
+<BorderPane prefHeight="650.0" prefWidth="750.0" stylesheets="@../estilos/css/estilo1.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
    <top>
-      <MenuBar style="-fx-background-color: #F0F8FF;" BorderPane.alignment="CENTER">
+      <MenuBar styleClass="MenuBar" BorderPane.alignment="CENTER">
         <menus>
         	<Menu mnemonicParsing="false" text="Precios">
               <items>
@@ -46,14 +47,32 @@
       </MenuBar>
    </top>
    <center>
-      <VBox alignment="BASELINE_CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #FFE4E1;" BorderPane.alignment="CENTER">
+      <VBox alignment="BASELINE_CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #FCC3E0;" BorderPane.alignment="CENTER">
          <children>
-            <Label alignment="CENTER" text="Agencia de transportes AMV" textFill="#141111">
+            <Label alignment="CENTER" text="AGENCIA DE TRANSPORTES AMV" textFill="#141111">
                <font>
-                  <Font size="36.0" />
+                  <Font name="System Bold" size="40.0" />
                </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
             </Label>
-            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="104.0" fitWidth="228.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../flecha.png" />
+               </image>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fitHeight="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../mapamadrid.png" />
+               </image>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ImageView>
          </children>
          <opaqueInsets>
             <Insets />

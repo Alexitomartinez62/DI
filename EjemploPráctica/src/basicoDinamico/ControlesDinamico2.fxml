@@ -5,22 +5,24 @@
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<GridPane minHeight="600.0" minWidth="550.0" style="-fx-background-color: #71F0EE;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="basicoDinamico.ListController">
+<GridPane alignment="CENTER" minHeight="600.0" minWidth="550.0" style="-fx-background-color: #71F0EE;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="basicoDinamico.ListController">
    <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="10.0" prefWidth="191.0" />
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="373.0" minWidth="10.0" prefWidth="359.0" />
    </columnConstraints>
    <rowConstraints>
-      <RowConstraints maxHeight="317.0" minHeight="10.0" prefHeight="238.0" vgrow="NEVER" />
-      <RowConstraints maxHeight="274.0" minHeight="9.0" prefHeight="172.0" vgrow="SOMETIMES" />
-      <RowConstraints maxHeight="222.0" minHeight="10.0" prefHeight="92.0" vgrow="SOMETIMES" />
-      <RowConstraints maxHeight="171.0" minHeight="10.0" prefHeight="120.0" vgrow="SOMETIMES" />
-      <RowConstraints maxHeight="197.0" minHeight="10.0" prefHeight="108.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="317.0" minHeight="10.0" prefHeight="190.0" vgrow="NEVER" />
+      <RowConstraints maxHeight="274.0" minHeight="9.0" prefHeight="133.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="222.0" minHeight="10.0" prefHeight="135.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="171.0" minHeight="10.0" prefHeight="143.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="197.0" minHeight="10.0" prefHeight="129.0" vgrow="SOMETIMES" />
    </rowConstraints>
    <children>
       <Label text="Nº de billetes que desea sacar" GridPane.rowIndex="3">
@@ -81,5 +83,13 @@
             <Font name="Comic Sans MS Bold" size="40.0" />
          </font>
       </Label>
+      <ImageView fitHeight="98.0" fitWidth="156.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenesView/avioncito.png" />
+         </image>
+         <GridPane.margin>
+            <Insets left="20.0" />
+         </GridPane.margin>
+      </ImageView>
    </children>
 </GridPane>

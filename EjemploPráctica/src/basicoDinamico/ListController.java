@@ -37,10 +37,10 @@ public class ListController {
         		"6 Personas");      
         
      // Ítems del ChoiceBox
-        destinoVuelta1.getItems().addAll("Madrid", "Barcelona", "Islas Canarias", "Islas Baleares", "Sevilla");    
+        destinoVuelta1.getItems().addAll("Barcelona", "Islas Canarias", "Islas Baleares", "Sevilla");    
         
      // Ítems del ChoiceBox
-        destinoIda1.getItems().addAll("Madrid", "Barcelona", "Islas Canarias", "Islas Baleares", "Sevilla" );    
+        destinoIda1.getItems().addAll("Madrid");    
         
        
                 

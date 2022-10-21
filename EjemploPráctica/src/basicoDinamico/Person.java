@@ -9,7 +9,9 @@ import javafx.beans.property.SimpleStringProperty;
  * 
  * @author SBF
  * 
+ * 
  */
+
 public class Person {
     private final SimpleStringProperty firstName;
     private final SimpleStringProperty lastName;

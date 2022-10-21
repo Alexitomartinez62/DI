@@ -43,7 +43,7 @@
             <Insets left="10.0" />
          </GridPane.margin>
          <image>
-            <Image url="@../imagenesView/precios.png" />
+            <Image url="@../imagenesView/Lista.png" />
          </image>
       </ImageView>
    </children>

@@ -95,6 +95,22 @@ public class MenuController {
 			e.printStackTrace();
 		}
     }
+    
+    @FXML
+    void abrirAyuda(ActionEvent event) {
+    	try {
+			// Cargamos el archivo Controles Dinámicos
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(MenuController.class.getResource("/basicoDinamico/ControlAyuda.fxml"));
+			GridPane listadoControles = (GridPane) loader.load();
+
+			// Se sitúa en el centro del diseño principal
+			rootLayout.setCenter(listadoControles);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+    }
+
 
     
 

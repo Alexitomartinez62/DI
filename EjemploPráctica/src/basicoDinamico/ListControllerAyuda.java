@@ -34,10 +34,11 @@ public class ListControllerAyuda {
         rootItem.getChildren().add(webItem);
         
         // Otro ítem de primer nivel
-        TreeItem<String> javaItem = new TreeItem<String>("Java Tutorials");
-        javaItem.getChildren().add(new TreeItem<String>("Java Language"));
-        javaItem.getChildren().add(new TreeItem<String>("Java Collections"));
-        javaItem.getChildren().add(new TreeItem<String>("Java Concurrency"));
+        TreeItem<String> javaItem = new TreeItem<String>("Finalidad de la aplicación");
+        javaItem.getChildren().add(new TreeItem<String>("Podrás ver la lista de precios, podrás seleccionar el vuelo que desees,"
+        		+ "\n en el medio de transporte que quieras y comprarlo, "
+        		+ "\n todo fácil y sencillo."));
+  
         rootItem.getChildren().add(javaItem);
         
         // Para que sea editable necesitamos especificar un CellFactory con el tipo que corresponda

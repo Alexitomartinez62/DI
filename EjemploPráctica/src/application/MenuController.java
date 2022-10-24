@@ -5,6 +5,8 @@ import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 
@@ -17,6 +19,10 @@ public class MenuController {
     private void initialize() {
         
     }
+    
+    @FXML
+    private Button botonSiguiente;
+    
     
     @FXML
     private void abrirFormulario(ActionEvent event) {    	
@@ -110,7 +116,9 @@ public class MenuController {
 			e.printStackTrace();
 		}
     }
-
+    
+    
+   
 
     
 

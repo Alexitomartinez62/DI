@@ -67,7 +67,7 @@
             <Insets />
          </GridPane.margin>
       </ChoiceBox>
-      <Button alignment="TOP_LEFT" contentDisplay="TOP" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" text="Comprar vuelo" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+      <Button fx:id="botonSiguiente" alignment="TOP_LEFT" contentDisplay="TOP" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" text="Comprar vuelo" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>

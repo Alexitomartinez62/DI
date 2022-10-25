@@ -1,5 +1,7 @@
 package basicoDinamico;
 
+import java.util.jar.Attributes.Name;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -13,6 +15,7 @@ import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldListCell;
+import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.control.cell.TextFieldTreeCell;
 
 public class ListControllerPrecios {
@@ -65,6 +68,7 @@ public class ListControllerPrecios {
         
        
           
-    }
     
+    
+    }
 }

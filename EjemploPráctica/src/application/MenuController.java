@@ -7,6 +7,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 
@@ -117,6 +118,21 @@ public class MenuController {
 		}
     }
     
+    
+    @FXML
+    void abrirFormulario6(ActionEvent event) {
+    	try {
+			// Cargamos el archivo Controles Dinámicos
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(MenuController.class.getResource("/basicoDinamico/Sample.fxml"));
+			AnchorPane listadoControles = (AnchorPane) loader.load();
+
+			// Se sitúa en el centro del diseño principal
+			rootLayout.setCenter(listadoControles);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+    }
     
    
 

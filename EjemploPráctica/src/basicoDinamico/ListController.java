@@ -57,23 +57,7 @@ public class ListController {
           
     }
     
-	// Pantalla principal en la que se añade o quita contenido
-	private BorderPane rootLayout;
-    
-    @FXML
-    void abrirGracias(ActionEvent event) {
-    	try {
-			// Cargamos el archivo Controles Dinámicos
-			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(ListController.class.getResource("/basicoDinamico/ControlesGracias.fxml"));
-			GridPane listadoControles = (GridPane) loader.load();
-
-			// Se sitúa en el centro del diseño principal
-			rootLayout.setCenter(listadoControles);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-    }
-
+	
+   
 
 }

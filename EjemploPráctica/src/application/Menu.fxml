@@ -28,7 +28,7 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Avión">
             <items>
-                        <MenuItem mnemonicParsing="false" onAction="#abrirFormulario2" text="Viaja en avión" />
+              <MenuItem mnemonicParsing="false" onAction="#abrirFormulario2" text="Viaja en avión" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Coche">
@@ -41,11 +41,16 @@
                 <MenuItem mnemonicParsing="false" onAction="#abrirFormulario4" text="Viaja en tren" />
               </items>
             </Menu>
-            <Menu mnemonicParsing="false" text="Ayuda">
+             <Menu mnemonicParsing="false" text="Ayuda">
               <items>
                 <MenuItem mnemonicParsing="false" onAction="#abrirAyuda" text="Sobre nosotros" />
               </items>
             </Menu>
+             <Menu mnemonicParsing="false" text="Viajeros con animales">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#abrirFormulario6" text="Editar" />
+            </items>
+          </Menu>
         </menus>
          <opaqueInsets>
             <Insets />
@@ -55,7 +60,7 @@
    <center>
       <VBox alignment="BASELINE_CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #FCC3E0;" BorderPane.alignment="CENTER">
          <children>
-            <Label alignment="CENTER" prefHeight="100.0" prefWidth="700.0" text="AGENCIA DE TRANSPORTES AMV" textFill="#141111">
+            <Label alignment="CENTER" prefHeight="100.0" prefWidth="700.0" text="AGENCIA DE TRANSPORTES AMV" textFill="#141111" underline="true">
                <font>
                   <Font name="System Bold" size="42.0" />
                </font>

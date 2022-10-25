@@ -8,6 +8,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.ListView;
@@ -31,6 +32,9 @@ public class ListController2 {
 
     @FXML
     private ChoiceBox<String> destinoVuelta1;
+    
+    @FXML
+    private CheckBox botonMascotas;
     
     @FXML
     private Button botonSiguiente;

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="650.0" prefWidth="750.0" stylesheets="@../estilos/css/estilo1.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
+   <top>
+      <MenuBar styleClass="MenuBar" BorderPane.alignment="CENTER">
+        <menus>
+        	<Menu mnemonicParsing="false" text="Precios">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#abrirFormulario5" text="Lista de precios" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Autobus">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Viaja en autobús" />                
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Avión">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#abrirFormulario2" text="Viaja en avión" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Coche">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#abrirFormulario3" text="Viaja en coche " />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Tren">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#abrirFormulario4" text="Viaja en tren" />
+              </items>
+            </Menu>
+             <Menu mnemonicParsing="false" text="Ayuda">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#abrirAyuda" text="Sobre nosotros" />
+              </items>
+            </Menu>
+             <Menu mnemonicParsing="false" text="Viajeros con animales">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#abrirFormulario6" text="Editar" />
+            </items>
+          </Menu>
+        </menus>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MenuBar>
+   </top>
+   <center>
+      <VBox alignment="BASELINE_CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #FCC3E0;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="100.0" prefWidth="700.0" text="AGENCIA DE TRANSPORTES AMV" textFill="#141111" underline="true">
+               <font>
+                  <Font name="System Bold" size="42.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Label>
+            <TilePane prefHeight="312.0" prefWidth="750.0">
+               <children>
+                  <ImageView fitHeight="240.0" fitWidth="231.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenesView/madridmapaa.png" />
+                     </image>
+                     <TilePane.margin>
+                        <Insets left="50.0" />
+                     </TilePane.margin>
+                  </ImageView>
+                  <ImageView fitHeight="194.0" fitWidth="190.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenesView/Motorola.png" />
+                     </image>
+                     <TilePane.margin>
+                        <Insets left="150.0" />
+                     </TilePane.margin>
+                  </ImageView>
+               </children>
+            </TilePane>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </center>
+</BorderPane>

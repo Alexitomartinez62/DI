@@ -76,7 +76,7 @@ public class ListControllerEdit implements Initializable {
         Animal animal1 = new Animal(1,"Gato","Fracisco León");
         Animal animal2 = new Animal(2,"Ratón","Bob Esponja");
         Animal animal3 = new Animal(3,"Gato","Laila Rodriguez");
-        Animal animal4 = new Animal(4,"Hámster","Wang");
+        Animal animal4 = new Animal(4,"Hámster","Wang Ye");
         Animal animal5 = new Animal(5,"Perro","Cristiano Ronaldo");
         Animal animal6 = new Animal(6,"Lobo","Javier Delgado");
         Animal animal7 = new Animal(7,"Perro","Sara Reinolds");

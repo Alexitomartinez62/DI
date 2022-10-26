@@ -12,6 +12,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TableColumn;
@@ -21,11 +22,12 @@ import javafx.scene.control.TreeView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldListCell;
 import javafx.scene.control.cell.TextFieldTreeCell;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 
 public class ListController {
-
+	
     @FXML
     private ChoiceBox<String> choice1;
     
@@ -41,7 +43,10 @@ public class ListController {
     @FXML
     private Button botonSiguiente;
     
-  
+    @FXML
+    private DatePicker dia;
+    @FXML
+    private BorderPane rootlayoout;
 
     @FXML
     private void initialize() {   
@@ -61,7 +66,20 @@ public class ListController {
           
     }
     
-	
+    @FXML
+     public void abrirFormulario(ActionEvent event) {
+    	try {
+			// Cargamos el archivo Controles Dinámicos
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(MenuController.class.getResource("/basicoDinamico/ControlesGracias.fxml"));
+			BorderPane listadoControles = (BorderPane) loader.load();
+
+			// Se sitúa en el centro del diseño principal
+			rootlayoout.setCenter(listadoControles);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+    }
    
 
 }

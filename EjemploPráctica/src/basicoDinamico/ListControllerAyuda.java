@@ -35,9 +35,10 @@ public class ListControllerAyuda {
         
         // Otro ítem de primer nivel
         TreeItem<String> javaItem = new TreeItem<String>("Finalidad de la aplicación");
-        javaItem.getChildren().add(new TreeItem<String>("Podrás ver la lista de precios, podrás seleccionar el vuelo que desees,"
+        javaItem.getChildren().add(new TreeItem<String>("Podrás ver la lista de precios, podrás seleccionar el viaje que desees,"
         		+ "\n en el medio de transporte que quieras y comprarlo, "
-        		+ "\n todo fácil y sencillo."));
+        		+ "\n todo fácil y sencillo."
+        		+ "\n También podrás editar una tabla si llevas tu mascota encima en tu viaje "));
   
         rootItem.getChildren().add(javaItem);
         

@@ -37,8 +37,6 @@ public class ListController {
     @FXML
     private ChoiceBox<String> destinoVuelta1;
     
-    @FXML
-    private CheckBox botonMascotas;
     
     @FXML
     private Button botonSiguiente;

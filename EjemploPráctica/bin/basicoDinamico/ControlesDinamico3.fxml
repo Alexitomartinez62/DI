@@ -2,7 +2,6 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
@@ -14,8 +13,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane fx:id="rootlayoout" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="basicoDinamico.ListController2">
+<BorderPane fx:id="rootlayoout" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="basicoDinamico.ListController2">
    <center>
       <GridPane alignment="CENTER" minHeight="600.0" minWidth="550.0" style="-fx-background-color: #A1F751;">
          <columnConstraints>
@@ -26,12 +24,11 @@
             <RowConstraints maxHeight="295.0" minHeight="10.0" prefHeight="191.0" vgrow="NEVER" />
             <RowConstraints maxHeight="274.0" minHeight="9.0" prefHeight="135.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="222.0" minHeight="10.0" prefHeight="133.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="222.0" minHeight="10.0" prefHeight="133.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="173.0" minHeight="10.0" prefHeight="141.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="197.0" minHeight="10.0" prefHeight="130.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Label text="Nº de billetes que desea sacar" GridPane.rowIndex="4">
+            <Label text="Nº de billetes que desea sacar" GridPane.rowIndex="3">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -39,7 +36,7 @@
                   <Insets left="10.0" />
                </GridPane.margin>
             </Label>
-            <ChoiceBox fx:id="choice1" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <ChoiceBox fx:id="choice1" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets left="100.0" />
                </GridPane.margin>
@@ -79,7 +76,7 @@
                   <Font name="Comic Sans MS" size="40.0" />
                </font>
             </Label>
-            <Button fx:id="botonSiguiente" mnemonicParsing="false" onAction="#abrirFormulario" text="Comprar viaje" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+            <Button fx:id="botonSiguiente" mnemonicParsing="false" onAction="#abrirFormulario" text="Comprar viaje" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -92,19 +89,6 @@
                   <Insets left="20.0" />
                </GridPane.margin>
             </ImageView>
-            <CheckBox fx:id="botonMascotas" mnemonicParsing="false" text="Marque la opción solo si viaja con su mascota" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </CheckBox>
-            <Label text="Viaje con mi mascota" GridPane.rowIndex="3">
-               <GridPane.margin>
-                  <Insets left="20.0" />
-               </GridPane.margin>
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-            </Label>
          </children>
       </GridPane>
    </center>

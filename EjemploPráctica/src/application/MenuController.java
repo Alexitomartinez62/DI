@@ -124,7 +124,7 @@ public class MenuController {
     	try {
 			// Cargamos el archivo Controles Dinámicos
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(MenuController.class.getResource("/basicoDinamico/PersonaVista.fxml"));
+			loader.setLocation(MenuController.class.getResource("/basicoDinamico/ControlesPersona.fxml"));
 			AnchorPane listadoControles = (AnchorPane) loader.load();
 
 			// Se sitúa en el centro del diseño principal

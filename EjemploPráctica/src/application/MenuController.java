@@ -120,11 +120,11 @@ public class MenuController {
     
     
     @FXML
-    void abrirFormulario6(ActionEvent event) {
+    void abrirFormulario7(ActionEvent event) {
     	try {
 			// Cargamos el archivo Controles Dinámicos
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(MenuController.class.getResource("/basicoDinamico/Sample.fxml"));
+			loader.setLocation(MenuController.class.getResource("/basicoDinamico/PersonaVista.fxml"));
 			AnchorPane listadoControles = (AnchorPane) loader.load();
 
 			// Se sitúa en el centro del diseño principal

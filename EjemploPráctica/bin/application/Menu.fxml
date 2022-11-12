@@ -46,9 +46,9 @@
                 <MenuItem mnemonicParsing="false" onAction="#abrirAyuda" text="Sobre nosotros" />
               </items>
             </Menu>
-             <Menu mnemonicParsing="false" text="Viajeros con animales">
+           <Menu mnemonicParsing="false" text="Nuevos viajeros">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#abrirFormulario6" text="Editar" />
+              <MenuItem mnemonicParsing="false" onAction="#abrirFormulario7" text="Editar" />
             </items>
           </Menu>
         </menus>

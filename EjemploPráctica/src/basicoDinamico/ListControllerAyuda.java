@@ -1,14 +1,15 @@
 package basicoDinamico;
 
 
+import java.net.URL;
+import java.util.ResourceBundle;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeView;
-
-import javafx.scene.control.cell.TextFieldTreeCell;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-
+import javafx.scene.input.MouseEvent;
 public class ListControllerAyuda {
 
 
@@ -25,32 +26,38 @@ public class ListControllerAyuda {
         
         // Ítems para el TreeView
         // Ítem raíz
-        TreeItem<String> rootItem = new TreeItem<String>("ACERCA DE NUESTRA EMPRESA", new ImageView(new Image("imagenesView/inte.png")));
+        TreeItem<String> rootItem = new TreeItem<>("ACERCA DE NUESTRA EMPRESA", new ImageView(new Image("imagenesView/inte.png")));
+        TreeItem<String> branchItem1 = new TreeItem<>("Precios");
+        TreeItem<String> branchItem2 = new TreeItem<>("Autobús, Coche y Tren");
+        TreeItem<String> branchItem3 = new TreeItem<>("Avión");
+        TreeItem<String> branchItem4 = new TreeItem<>("Nuevos Viajeros");
+        
+        
+        TreeItem<String> leafItem1 = new TreeItem<>("Hola");
+        TreeItem<String> leafItem2 = new TreeItem<>("Hola");
+        TreeItem<String> leafItem3 = new TreeItem<>("Hola");
+        TreeItem<String> leafItem4 = new TreeItem<>("Hola");
 
-        // Ítem de primer nivel
-        TreeItem<String> webItem = new TreeItem<String>("PANTALLA POR PANTALLA");
-        webItem.getChildren().add(new TreeItem<String>("Esta es una página de viajes sencilla para la gente que quiere salir fácil,"
-        		+ "\n por España y en cualquier método de transoprte, "
-        		+ "\n navegas por cualquier pestaña para comprar el billete deseado en el transporte deseado"
-        		+ "\n y del resto ya nos encargamos nosotros!!"));
-        rootItem.getChildren().add(webItem);
+        branchItem1.getChildren().addAll(leafItem1);
+        branchItem2.getChildren().addAll(leafItem2);
+        branchItem3.getChildren().addAll(leafItem3);
+        branchItem4.getChildren().addAll(leafItem4);
         
-        // Otro ítem de primer nivel
-        TreeItem<String> javaItem = new TreeItem<String>("FINALIDAD DE LA APLICACIÓN");
-        javaItem.getChildren().add(new TreeItem<String>("Podrás ver la lista de precios, podrás seleccionar el viaje que desees,"
-        		+ "\n en el medio de transporte que quieras y comprarlo, "
-        		+ "\n todo fácil y sencillo."
-        		+ "\n Tenemos otra pestaña adiccional que sirve para controlar los nuevos viajeros!"
-        		+ "\n Permite añadir, modificar y eliminar registros de nuevos viajeros "));
-  
-        rootItem.getChildren().add(javaItem);
+        rootItem.getChildren().addAll(branchItem1, branchItem2, branchItem3, branchItem4);
         
-        // Para que sea editable necesitamos especificar un CellFactory con el tipo que corresponda
-        tree1.setCellFactory(TextFieldTreeCell.forTreeView());
-        
-        // Expadimos por defecto el ítem raíz
-        rootItem.setExpanded(true); 
-        tree1.setRoot(rootItem);               
+
+
+        tree1.setRoot(rootItem);    
+
     }
     
-}
+    public void selectItem() {
+    	TreeItem<String> item = tree1.getSelectionModel().getSelectedItem();
+    	
+    	if(item!= null) {
+    	System.out.println(item.getValue());
+   
+    	}
+    
+    }
+   }

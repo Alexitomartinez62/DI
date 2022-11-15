@@ -68,7 +68,7 @@
                   <Insets top="30.0" />
                </VBox.margin>
             </Label>
-            <TilePane prefHeight="312.0" prefWidth="750.0">
+            <TilePane alignment="CENTER" prefHeight="312.0" prefWidth="750.0">
                <children>
                   <ImageView fitHeight="240.0" fitWidth="231.0" pickOnBounds="true" preserveRatio="true">
                      <image>

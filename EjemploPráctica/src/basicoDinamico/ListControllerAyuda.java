@@ -6,6 +6,8 @@ import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeView;
 
 import javafx.scene.control.cell.TextFieldTreeCell;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 public class ListControllerAyuda {
 
@@ -23,7 +25,7 @@ public class ListControllerAyuda {
         
         // Ítems para el TreeView
         // Ítem raíz
-        TreeItem<String> rootItem = new TreeItem<String>("ACERCA DE NUESTRA EMPRESA");
+        TreeItem<String> rootItem = new TreeItem<String>("ACERCA DE NUESTRA EMPRESA", new ImageView(new Image("imagenesView/inte.png")));
 
         // Ítem de primer nivel
         TreeItem<String> webItem = new TreeItem<String>("PANTALLA POR PANTALLA");

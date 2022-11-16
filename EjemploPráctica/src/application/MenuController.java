@@ -111,20 +111,6 @@ public class MenuController {
 		}
     }
     
-    @FXML
-    void abrirAyuda(ActionEvent event) {
-    	try {
-			// Cargamos el archivo Controles Dinámicos
-			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(MenuController.class.getResource("/basicoDinamico/ControlAyuda.fxml"));
-			GridPane listadoControles = (GridPane) loader.load();
-
-			// Se sitúa en el centro del diseño principal
-			rootLayout.setCenter(listadoControles);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-    }
     
     
     @FXML
@@ -141,6 +127,25 @@ public class MenuController {
 			e.printStackTrace();
 		}
     }
+    
+    
+    @FXML
+    void abrirFormulario8(ActionEvent event) {
+    	try {
+			// Cargamos el archivo Controles Dinámicos
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(MenuController.class.getResource("/basicoDinamico/Tree.fxml"));
+			AnchorPane listadoControles = (AnchorPane) loader.load();
+
+			// Se sitúa en el centro del diseño principal
+			rootLayout.setCenter(listadoControles);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+    }
+    
+    
+    
     
     
     /*public void robot(ActionEvent primaryStage) {

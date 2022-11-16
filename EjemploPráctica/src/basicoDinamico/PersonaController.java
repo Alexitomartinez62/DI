@@ -77,14 +77,14 @@ public class PersonaController implements Initializable {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setHeaderText(null);
                 alert.setTitle("Info");
-                alert.setContentText("Persona añadida");
+                alert.setContentText("Persona añadida correctamente!");
                 alert.showAndWait();
             } else {
 
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setHeaderText(null);
                 alert.setTitle("Error");
-                alert.setContentText("La persona existe");
+                alert.setContentText("Esta persona ya existe");
                 alert.showAndWait();
             }
         } catch (NumberFormatException e) {
@@ -92,7 +92,7 @@ public class PersonaController implements Initializable {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
             alert.setTitle("Error");
-            alert.setContentText("Formato incorrecto");
+            alert.setContentText("Formato incorrecto, introduzca de nuevo");
             alert.showAndWait();
         }
 
@@ -124,7 +124,7 @@ public class PersonaController implements Initializable {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
             alert.setTitle("Error");
-            alert.setContentText("Debes seleccionar una persona");
+            alert.setContentText("Debes seleccionar una persona para poder modificar");
             alert.showAndWait();
         } else {
 
@@ -151,7 +151,7 @@ public class PersonaController implements Initializable {
                     Alert alert = new Alert(Alert.AlertType.INFORMATION);
                     alert.setHeaderText(null);
                     alert.setTitle("Info");
-                    alert.setContentText("Persona modificada");
+                    alert.setContentText("Persona modificada correctamente");
                     alert.showAndWait();
 
                 } else {
@@ -159,7 +159,7 @@ public class PersonaController implements Initializable {
                     Alert alert = new Alert(Alert.AlertType.ERROR);
                     alert.setHeaderText(null);
                     alert.setTitle("Error");
-                    alert.setContentText("La persona existe");
+                    alert.setContentText("Esta persona ya existe");
                     alert.showAndWait();
                 }
             } catch (NumberFormatException e) {
@@ -167,7 +167,7 @@ public class PersonaController implements Initializable {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setHeaderText(null);
                 alert.setTitle("Error");
-                alert.setContentText("Formato incorrecto");
+                alert.setContentText("Formato incorrecto, introduzca de nuevo");
                 alert.showAndWait();
             }
 
@@ -185,8 +185,8 @@ public class PersonaController implements Initializable {
         if (p == null) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
-            alert.setTitle("Error");
-            alert.setContentText("Debes seleccionar una persona");
+            alert.setTitle("ERROR");
+            alert.setContentText("Debes seleccionar una persona para poder eliminar");
             alert.showAndWait();
         } else {
 
@@ -198,7 +198,7 @@ public class PersonaController implements Initializable {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setHeaderText(null);
             alert.setTitle("Info");
-            alert.setContentText("Persona eliminada");
+            alert.setContentText("Persona eliminada correctamente");
             alert.showAndWait();
 
         }

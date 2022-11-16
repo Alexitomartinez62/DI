@@ -43,7 +43,7 @@
             </Menu>
              <Menu mnemonicParsing="false" text="Ayuda">
               <items>
-                <MenuItem mnemonicParsing="false" onAction="#abrirAyuda" text="Sobre nosotros" />
+                <MenuItem mnemonicParsing="false" onAction="#abrirFormulario8" text="Sobre nosotros" />
               </items>
             </Menu>
            <Menu mnemonicParsing="false" text="Nuevos viajeros">

@@ -8,14 +8,20 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Insets;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 import basicoDinamico.Persona;
+import javafx.scene.input.KeyEvent;
 
 public class PersonaController implements Initializable {
 
@@ -52,8 +58,34 @@ public class PersonaController implements Initializable {
         this.colNombre.setCellValueFactory(new PropertyValueFactory("nombre"));
         this.colApellidos.setCellValueFactory(new PropertyValueFactory("apellidos"));
         this.colEdad.setCellValueFactory(new PropertyValueFactory("edad"));
+        
+        txtNombre.setOnKeyPressed((event) -> mostrarTecla(event));
+        txtNombre.setOnKeyReleased((event) -> mostrarTecla(event));
+        txtNombre.setOnKeyTyped((event) -> mostrarTecla(event));
+        
+        txtApellidos.setOnKeyPressed((event) -> mostrarTecla(event));
+        txtApellidos.setOnKeyReleased((event) -> mostrarTecla(event));
+        txtApellidos.setOnKeyTyped((event) -> mostrarTecla(event));
+        
+        txtEdad.setOnKeyPressed((event) -> mostrarTecla(event));
+        txtEdad.setOnKeyReleased((event) -> mostrarTecla(event));
+        txtEdad.setOnKeyTyped((event) -> mostrarTecla(event));
+		
+		
+    
+    
+    
+    
     }
-
+    
+    
+    
+    private void mostrarTecla(KeyEvent event) {
+		System.out.println("Key code " + event.getEventType().getName() + ": " + event.getCode() + ","
+				+ " Key text " + event.getEventType().getName() + ": " + event.getText() + ","
+				+ " Key character " + event.getEventType().getName() + ": " +  (int) event.getCharacter().charAt(0));
+	}
+    
     @FXML
     private void agregarPersona(ActionEvent event) {
 
@@ -202,6 +234,13 @@ public class PersonaController implements Initializable {
             alert.showAndWait();
 
         }
+        
+        
+       
+    
+        
+        
+        
 
     }
 

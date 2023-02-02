@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedAreaChart?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="basicoDinamico.Graficos3">
+   <center>
+      <StackedAreaChart fx:id="stackedAreaChart" stylesheets="@../estilos/css/estilograficos.css" title="Evolución de nuestra empresa" BorderPane.alignment="CENTER">
+        <xAxis>
+          <NumberAxis autoRanging="false" lowerBound="2017.0" minorTickCount="1" minorTickLength="1.0" side="BOTTOM" tickLabelGap="2.0" tickUnit="1.0" upperBound="2022.0" fx:id="x" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y" side="LEFT" />
+        </yAxis>
+      </StackedAreaChart>
+   </center>
+</BorderPane>

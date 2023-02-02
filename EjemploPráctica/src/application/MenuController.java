@@ -29,6 +29,7 @@ public class MenuController {
         
     }
     
+  
     @FXML
     private Button botonSiguiente;
     
@@ -143,7 +144,57 @@ public class MenuController {
 		}
     }
     
+    
+    
+    @FXML
+    void abrirFormulariografica(ActionEvent event) {
+    	try {
+			// Cargamos el archivo Controles Dinámicos
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(MenuController.class.getResource("/basicoDinamico/ControlesGraficos.fxml"));
+			BorderPane listadoControles = (BorderPane) loader.load();
 
+			// Se sitúa en el centro del diseño principal
+			rootLayout.setCenter(listadoControles);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+    }
+    
+    @FXML
+    void abrirFormulariografica2(ActionEvent event) {
+    	try {
+			// Cargamos el archivo Controles Dinámicos
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(MenuController.class.getResource("/basicoDinamico/ControlesGraficos2.fxml"));
+			BorderPane listadoControles = (BorderPane) loader.load();
+
+			// Se sitúa en el centro del diseño principal
+			rootLayout.setCenter(listadoControles);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+    }
+    @FXML
+    void abrirFormulariografica3(ActionEvent event) {
+    	try {
+			// Cargamos el archivo Controles Dinámicos
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(MenuController.class.getResource("/basicoDinamico/ControlesGraficos3.fxml"));
+			BorderPane listadoControles = (BorderPane) loader.load();
+
+			// Se sitúa en el centro del diseño principal
+			rootLayout.setCenter(listadoControles);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+    }
+
+    
+    
+    
+    
+    
     
 
     

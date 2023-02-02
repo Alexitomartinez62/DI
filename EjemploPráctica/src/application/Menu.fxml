@@ -21,7 +21,7 @@
                 <MenuItem mnemonicParsing="false" onAction="#abrirFormulario5" text="Lista de precios" />
               </items>
             </Menu>
-          <Menu mnemonicParsing="false" text="Autobus">
+          <Menu mnemonicParsing="false" text="Autobús">
             <items>
                   <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Viaja en autobús" />                
             </items>
@@ -49,6 +49,17 @@
            <Menu mnemonicParsing="false" text="Nuevos viajeros">
             <items>
               <MenuItem mnemonicParsing="false" onAction="#abrirFormulario7" text="Editar" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Estadistícas">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#abrirFormulariografica" text="PieChar" />
+            </items>
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#abrirFormulariografica2" text="BarChart" />
+            </items>
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#abrirFormulariografica3" text="StackedAreaChart" />
             </items>
           </Menu>
         </menus>

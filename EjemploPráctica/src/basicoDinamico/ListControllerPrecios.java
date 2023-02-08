@@ -40,13 +40,13 @@ public class ListControllerPrecios {
      // Lista auxiliar para TableView
     private ObservableList<Person> data = FXCollections.observableArrayList(
     	    new Person("Tren", "Toledo o Cuidad Real", "13$", 1231),
-    	    new Person("Tren", "Burgos o Ávila", "15$", 970),
+    	    new Person("Tren", "Burgos o Avila", "15$", 970),
     	    new Person("Coche", "Toledo o Cuidad Real", "16$", 189),
-    	    new Person("Coche", "Burgos o Ávila", "20$", 247),
-    	    new Person("Autobús", "Toledo o Cuidad Real", "10$", 222),
-    	    new Person("Autobús", "Burgos o Ávila", "13$", 389),
-    	    new Person("Avión", "Barcelona o Sevilla", "40$", 520),
-    	    new Person("Avión", "Islas Canarias o Baleares", "55$", 633)
+    	    new Person("Coche", "Burgos o Avila", "20$", 247),
+    	    new Person("Autobus", "Toledo o Cuidad Real", "10$", 222),
+    	    new Person("Autobus", "Burgos o Avila", "13$", 389),
+    	    new Person("Avion", "Barcelona o Sevilla", "40$", 520),
+    	    new Person("Avion", "Islas Canarias o Baleares", "55$", 633)
     	   
     	    
     	);

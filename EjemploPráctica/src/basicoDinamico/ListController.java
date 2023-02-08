@@ -56,33 +56,29 @@ public class ListController {
 
     @FXML
     private void initialize() {   
-        // Controles de JavaFX a los que se añaden directamente los items 
-    	// Ítems del ChoiceBox
+        // Controles de JavaFX a los que se anaden directamente los items 
+    	// items del ChoiceBox
         choice1.getItems().addAll("1 Billete", "2 Billetes", "3 Billetes", "4 Billetes", "5 Personas", 
         		"6 Personas");      
         
-     // Ítems del ChoiceBox
+     // items del ChoiceBox
         destinoVuelta1.getItems().addAll("Barcelona", "Islas Canarias", "Islas Baleares", "Sevilla");    
         
-     // Ítems del ChoiceBox
+     // items del ChoiceBox
         destinoIda1.getItems().addAll("Madrid");    
         
-        
-        
-       
                 
-          
     }
   
     @FXML
      public void abrirFormulario(ActionEvent event) {
     	try {
-			// Cargamos el archivo Controles Dinámicos
+			// Cargamos el archivo Controles Dinamicos
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(MenuController.class.getResource("/basicoDinamico/ControlesGracias.fxml"));
 			BorderPane listadoControles = (BorderPane) loader.load();
 
-			// Se sitúa en el centro del diseño principal
+			// Se situa en el centro del diseno principal
 			rootlayoout.setCenter(listadoControles);
 		} catch (IOException e) {
 			e.printStackTrace();

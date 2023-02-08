@@ -48,9 +48,7 @@ public class PersonaController implements Initializable {
     @FXML
     private Button btnEliminar;
 
-    /**
-     * Initializes the controller class.
-     */
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         personas = FXCollections.observableArrayList();
@@ -99,9 +97,9 @@ public class PersonaController implements Initializable {
             // Creo una persona
             Persona p = new Persona(nombre, apellidos, edad);
 
-            // Compruebo si la persona esta en el lista
+            // Compruebo si la persona esta en la lista
             if (!this.personas.contains(p)) {
-                // Lo añado a la lista
+                // Lo anado a la lista
                 this.personas.add(p);
                 // Seteo los items
                 this.tblPersonas.setItems(personas);
@@ -109,7 +107,7 @@ public class PersonaController implements Initializable {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setHeaderText(null);
                 alert.setTitle("Info");
-                alert.setContentText("Persona añadida correctamente!");
+                alert.setContentText("Persona anadida correctamente!");
                 alert.showAndWait();
             } else {
 

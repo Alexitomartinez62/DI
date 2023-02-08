@@ -29,7 +29,7 @@ public class Graficos3 {
     	XYChart.Series<Number, Number> series = new XYChart.Series<>();
     	
     	
-    	series.setName("Personas x Años");
+    	series.setName("Personas x Anos");
     	series.getData().add(new XYChart.Data<>(2017, 15000));
     	series.getData().add(new XYChart.Data<>(2018, 23000));
     	series.getData().add(new XYChart.Data<>(2019, 17000));

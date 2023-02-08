@@ -2,10 +2,8 @@ package basicoDinamico;
 
 import java.util.Objects;
 
-/**
- *
- * @author Fernando
- */
+
+ 
 public class Persona {
     
     private String nombre;

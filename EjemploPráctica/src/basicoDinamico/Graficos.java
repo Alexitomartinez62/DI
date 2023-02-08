@@ -17,14 +17,14 @@ public class Graficos {
     private void initialize() {
     	ObservableList<PieChart.Data> pieChartData
     	= FXCollections.observableArrayList(
-    			new PieChart.Data("Autobús",26),
-    			new PieChart.Data("Avión",10),
+    			new PieChart.Data("Autobus",26),
+    			new PieChart.Data("Avion",10),
     			new PieChart.Data("Coche",14),
     			new PieChart.Data("Tren",50));
     	pieChart.setData(pieChartData);
     	pieChart.setStartAngle(90);
     	
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
     	
         
      }

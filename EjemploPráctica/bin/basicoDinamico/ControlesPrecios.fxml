@@ -24,7 +24,7 @@
    <children>
       <TableView fx:id="table1" fixedCellSize="30.0" prefHeight="200.0" prefWidth="742.0" tableMenuButtonVisible="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
          <columns>
-            <TableColumn fx:id="firstNameCol" prefWidth="75.0" text="Método Transporte" />
+            <TableColumn fx:id="firstNameCol" prefWidth="75.0" text="Metodo Transporte" />
             <TableColumn fx:id="lastNameCol" prefWidth="112.0" text="Destinos" />
             <TableColumn fx:id="emailCol" minWidth="0.0" prefWidth="105.0" text="Precios" />
             <TableColumn fx:id="ageColumn" prefWidth="88.0" text="Seguro de viaje" />

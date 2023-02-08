@@ -25,6 +25,7 @@
     -fx-font-size: 14 pt;
     -fx-text-fill: #404040;
 }
+
 Button { -fx-background-color: F955DE;
          -fx-border-color: #FFFFFF;
          -fx-border-width: 2;

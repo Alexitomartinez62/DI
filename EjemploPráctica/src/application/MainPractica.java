@@ -6,14 +6,20 @@
 	import javafx.scene.layout.BorderPane;
 	import javafx.stage.Stage;
 	
-	
+	/**
+	* Clase Main donde se inicia la aplicaciÃ³n
+	*
+	* @author Alejandro Martinez DAM
+	* @version 1.0
+	*
+	*/
 	public class MainPractica extends Application {
 		private BorderPane rootLayout;	
 		
 		@Override
 		public void start(Stage primaryStage) {
 			try {
-				// Carga el diseño del archivo FXML en la variable rootLayout
+				// Carga el diseno del archivo FXML en la variable rootLayout
 				FXMLLoader loader = new FXMLLoader();
 				loader.setLocation(MainPractica.class.getResource("Menu.fxml"));
 				rootLayout = (BorderPane) loader.load();

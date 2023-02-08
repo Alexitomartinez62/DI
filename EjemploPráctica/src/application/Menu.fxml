@@ -21,14 +21,14 @@
                 <MenuItem mnemonicParsing="false" onAction="#abrirFormulario5" text="Lista de precios" />
               </items>
             </Menu>
-          <Menu mnemonicParsing="false" text="Autobús">
+          <Menu mnemonicParsing="false" text="Autobus">
             <items>
-                  <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Viaja en autobús" />                
+                  <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Viaja en autobus" />                
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Avión">
+          <Menu mnemonicParsing="false" text="Avion">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#abrirFormulario2" text="Viaja en avión" />
+              <MenuItem mnemonicParsing="false" onAction="#abrirFormulario2" text="Viaja en avion" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Coche">
@@ -51,7 +51,7 @@
               <MenuItem mnemonicParsing="false" onAction="#abrirFormulario7" text="Editar" />
             </items>
           </Menu>
-            <Menu mnemonicParsing="false" text="Estadistícas">
+            <Menu mnemonicParsing="false" text="Estadisticas">
             <items>
               <MenuItem mnemonicParsing="false" onAction="#abrirFormulariografica" text="PieChar" />
             </items>

@@ -7,7 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="433.0" prefWidth="639.0" style="-fx-background-color: #ffe4c4;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="basicoDinamico.PersonaController">
+<AnchorPane id="AnchorPane" prefHeight="433.0" prefWidth="639.0" style="-fx-background-color: #ffe4c4;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="basicoDinamico.PersonaController">
    <children>
       <Button fx:id="btnAgregar" layoutX="25.0" layoutY="348.0" mnemonicParsing="false" onAction="#agregarPersona" prefHeight="25.0" prefWidth="149.0" text="Agregar persona" />
       <TextField fx:id="txtNombre" layoutX="25.0" layoutY="102.0" />

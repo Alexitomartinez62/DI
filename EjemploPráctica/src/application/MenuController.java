@@ -21,7 +21,7 @@ import javafx.stage.Stage;
 
 public class MenuController {
 	
-	// Pantalla principal en la que se añade o quita contenido
+	// Pantalla principal en la que se anade o quita contenido
 	private BorderPane rootLayout;
   
     @FXML
@@ -37,12 +37,12 @@ public class MenuController {
     @FXML
     private void abrirFormulario(ActionEvent event) {    	
     	try {
-			// Cargamos el archivo Controles Dinámicos
+			// Cargamos el archivo Controles Dinamicos
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(MenuController.class.getResource("/basicoDinamico/ControlesDinamicos.fxml"));
 			BorderPane listadoControles = (BorderPane) loader.load();
 
-			// Se sitúa en el centro del diseño principal
+			// Se situa en el centro del diseno principal
 			rootLayout.setCenter(listadoControles);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -52,12 +52,12 @@ public class MenuController {
     @FXML
     void abrirFormulario2(ActionEvent event) {
     	try {
-			// Cargamos el archivo Controles Dinámicos
+			// Cargamos el archivo Controles Dinamicos
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(MenuController.class.getResource("/basicoDinamico/ControlesDinamico2.fxml"));
 			BorderPane listadoControles = (BorderPane) loader.load();
 
-			// Se sitúa en el centro del diseño principal
+			// Se situa en el centro del diseno principal
 			rootLayout.setCenter(listadoControles);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -68,12 +68,12 @@ public class MenuController {
     @FXML
     void abrirFormulario3(ActionEvent event) {
     	try {
-			// Cargamos el archivo Controles Dinámicos
+			// Cargamos el archivo Controles Dinamicos
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(MenuController.class.getResource("/basicoDinamico/ControlesDinamico3.fxml"));
 			BorderPane listadoControles = (BorderPane) loader.load();
 
-			// Se sitúa en el centro del diseño principal
+			// Se situa en el centro del diseno principal
 			rootLayout.setCenter(listadoControles);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -84,12 +84,12 @@ public class MenuController {
     @FXML
     void abrirFormulario4(ActionEvent event) {
     	try {
-			// Cargamos el archivo Controles Dinámicos
+			// Cargamos el archivo Controles Dinamicos
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(MenuController.class.getResource("/basicoDinamico/ControlesDinamico4.fxml"));
 			BorderPane listadoControles = (BorderPane) loader.load();
 
-			// Se sitúa en el centro del diseño principal
+			// Se situa en el centro del diseno principal
 			rootLayout.setCenter(listadoControles);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -100,12 +100,12 @@ public class MenuController {
     @FXML
     void abrirFormulario5(ActionEvent event) {
     	try {
-			// Cargamos el archivo Controles Dinámicos
+			// Cargamos el archivo Controles Dinamicos
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(MenuController.class.getResource("/basicoDinamico/ControlesPrecios.fxml"));
 			GridPane listadoControles = (GridPane) loader.load();
 
-			// Se sitúa en el centro del diseño principal
+			// Se situa en el centro del diseno principal
 			rootLayout.setCenter(listadoControles);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -116,12 +116,12 @@ public class MenuController {
     @FXML
     void abrirFormulario7(ActionEvent event) {
     	try {
-			// Cargamos el archivo Controles Dinámicos
+			// Cargamos el archivo Controles Dinamicos
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(MenuController.class.getResource("/basicoDinamico/ControlesPersona.fxml"));
 			AnchorPane listadoControles = (AnchorPane) loader.load();
 
-			// Se sitúa en el centro del diseño principal
+			// Se situa en el centro del diseno principal
 			rootLayout.setCenter(listadoControles);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -132,12 +132,12 @@ public class MenuController {
     @FXML
     void abrirFormulario8(ActionEvent event) {
     	try {
-			// Cargamos el archivo Controles Dinámicos
+			// Cargamos el archivo Controles Dinamicos
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(MenuController.class.getResource("/basicoDinamico/Tree.fxml"));
 			AnchorPane listadoControles = (AnchorPane) loader.load();
 
-			// Se sitúa en el centro del diseño principal
+			// Se situa en el centro del diseno principal
 			rootLayout.setCenter(listadoControles);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -149,12 +149,12 @@ public class MenuController {
     @FXML
     void abrirFormulariografica(ActionEvent event) {
     	try {
-			// Cargamos el archivo Controles Dinámicos
+			// Cargamos el archivo Controles Dinamicos
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(MenuController.class.getResource("/basicoDinamico/ControlesGraficos.fxml"));
 			BorderPane listadoControles = (BorderPane) loader.load();
 
-			// Se sitúa en el centro del diseño principal
+			// Se situa en el centro del diseno principal
 			rootLayout.setCenter(listadoControles);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -164,12 +164,12 @@ public class MenuController {
     @FXML
     void abrirFormulariografica2(ActionEvent event) {
     	try {
-			// Cargamos el archivo Controles Dinámicos
+			// Cargamos el archivo Controles Dinamicos
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(MenuController.class.getResource("/basicoDinamico/ControlesGraficos2.fxml"));
 			BorderPane listadoControles = (BorderPane) loader.load();
 
-			// Se sitúa en el centro del diseño principal
+			// Se situa en el centro del diseno principal
 			rootLayout.setCenter(listadoControles);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -178,12 +178,12 @@ public class MenuController {
     @FXML
     void abrirFormulariografica3(ActionEvent event) {
     	try {
-			// Cargamos el archivo Controles Dinámicos
+			// Cargamos el archivo Controles Dinamicos
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(MenuController.class.getResource("/basicoDinamico/ControlesGraficos3.fxml"));
 			BorderPane listadoControles = (BorderPane) loader.load();
 
-			// Se sitúa en el centro del diseño principal
+			// Se situa en el centro del diseno principal
 			rootLayout.setCenter(listadoControles);
 		} catch (IOException e) {
 			e.printStackTrace();
